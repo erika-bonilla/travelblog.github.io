@@ -1,0 +1,30 @@
+*{
+  text-align: center;
+  background-color: #487047
+}
+
+h1{
+  font-family: "Goudy Old Style";
+  font-size: 45px;
+  color: white;
+}
+
+h2{
+  font-family:"Ink Free";
+    font-size: 30px;
+    color: white;
+}
+h3{
+  font-family:"MV Boli";
+    font-size: 18px;
+}
+
+img{
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+  p {
+    text-wrap: pretty;
+  }
