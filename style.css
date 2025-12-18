@@ -49,7 +49,7 @@ img {
   margin: 10px;
 }
 
-.photo-row-2{
+.photo-row-2 img{
   width: 500px;
   height: auto;
   object-fit: cover;
