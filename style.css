@@ -17,7 +17,7 @@ body {
   text-align: center;
   color: white;
 }
-.container-two {
+#container-two {
   max-width: 700px;
   margin: 0 auto;
   padding: 25px;
