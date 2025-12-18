@@ -7,8 +7,8 @@ body {
 }
 
 /* MAIN CONTAINER (keeps things centered & cute) */
-#container {
-  max-width: 900px;
+.container, .container-two {
+  max-width: 45%;
   margin: 0 auto;
   padding: 25px;
   background: rgba(255, 255, 255, 0.1);
@@ -17,16 +17,7 @@ body {
   text-align: center;
   color: white;
 }
-#container-two {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 40px;
-  backdrop-filter: blur(3px);
-  text-align: center;
-  color: white;
-}
+
 
 /* HEADERS */
 h1 {
