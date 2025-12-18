@@ -6,12 +6,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* MAIN CONTAINER (keeps things centered & cute) */
-.container-one, .container-two {
-  display: inline-block;
-  max-width: 48%;
-  margin: 0 auto;
-  vertical-align: top;
+.container-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.container-one,
+.container-two {
+  width: 48%;
   padding: 25px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 40px;
