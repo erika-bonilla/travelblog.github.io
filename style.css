@@ -7,9 +7,11 @@ body {
 }
 
 /* MAIN CONTAINER (keeps things centered & cute) */
-.container, .container-two {
-  max-width: 45%;
+.container-one, .container-two {
+  display: inline-block;
+  max-width: 48%;
   margin: 0 auto;
+  vertical-align: top;
   padding: 25px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 40px;
