@@ -50,7 +50,7 @@ img {
 }
 
 .photo-row-2 img{
-  width: 300px;
+  width: 100px;
   height: auto;
   object-fit: cover;
   border-radius: 15px;
