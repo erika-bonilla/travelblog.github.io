@@ -10,6 +10,9 @@ body {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  max-width: 1000px; /* or whatever width you want for the whole content */
+  margin: 0 auto; /* centers the wrapper */
+  padding: 20px; /* optional, adds space around the wrapper */
 }
 
 .container-one,
