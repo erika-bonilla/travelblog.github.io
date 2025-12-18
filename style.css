@@ -14,10 +14,10 @@ body {
 
 .container-one,
 .container-two {
-  width: 48%;
+  width: 45%;
   padding: 25px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 40px;
+  border-radius: 30px;
   backdrop-filter: blur(3px);
   text-align: center;
   color: white;
