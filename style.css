@@ -17,19 +17,25 @@ body {
   height: 80vh; /* 👈 limits how tall the section is */
 }
 
-.container-one,
-.container-two {
-  width: 40%;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  backdrop-filter: blur(3px);
-  text-align: center;
-  color: white;
-
-  height: 80vh;
-max-height: 80vh;
-overflow-y: auto;
+.container-one, .container-two {
+  width: 40%; 
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 30px; 
+  backdrop-filter: blur(3px); 
+  text-align: center; 
+  color: white; 
+} 
+.container-one, .container-two {
+  width: 40%; 
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 30px; 
+  backdrop-filter: blur(3px); 
+  text-align: center; 
+  color: white; 
+  max-height: 80vh; /* limits height to screen */
+  overflow-y: auto; /* scrolls INSIDE container */ 
 }
 .container-two {
   max-height: 60vh;
