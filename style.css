@@ -27,6 +27,9 @@ body {
   text-align: center;
   color: white;
 
+  height: 80vh;
+max-height: 80vh;
+overflow-y: auto;
 }
 .container-two {
   max-height: 60vh;
