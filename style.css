@@ -26,19 +26,7 @@ body {
   backdrop-filter: blur(3px);
   text-align: center;
   color: white;
-}
-.container-one,
-.container-two {
-  width: 40%;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  backdrop-filter: blur(3px);
-  text-align: center;
-  color: white;
 
-  max-height: 80vh;      /* limits height to screen */
-  overflow-y: auto;      /* scrolls INSIDE container */
 }
 .container-two {
   max-height: 60vh;
@@ -118,4 +106,27 @@ img {
 .place-btn:hover {
   transform: scale(1.05);
   background: #f4fff4;
+}
+
+img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+@media (max-width: 900px) {
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container-one,
+  .container-two {
+    width: 100%;
+  }
+
+  .photo-row-2 img {
+    width: 95%;
+  }
 }
