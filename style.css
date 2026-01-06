@@ -6,39 +6,36 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* FLEX WRAPPER */
 .container-wrapper {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  max-width: 1500px; /* or whatever width you want for the whole content */
-  margin: 0 auto; /* centers the wrapper */
-  padding: 20px; /* optional, adds space around the wrapper */
-
-  height: 80vh; /* 👈 limits how tall the section is */
+  max-width: 1500px; /* maximum width of the page */
+  margin: 0 auto; /* center wrapper */
+  padding: 20px;
+  /* removed height: 80vh; so containers grow naturally */
 }
 
-.container-one, .container-two {
-  width: 40%; 
-  padding: 20px; 
-  background: rgba(255, 255, 255, 0.1); 
-  border-radius: 30px; 
-  backdrop-filter: blur(3px); 
-  text-align: center; 
-  color: white; 
-} 
-.container-one, .container-two {
-  width: 40%; 
-  padding: 20px; 
-  background: rgba(255, 255, 255, 0.1); 
-  border-radius: 30px; 
-  backdrop-filter: blur(3px); 
-  text-align: center; 
-  color: white; 
-  max-height: 80vh; /* limits height to screen */
-  overflow-y: auto; /* scrolls INSIDE container */ 
+/* CONTAINERS */
+.container-one {
+  flex: 2.2; /* left container wider */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(3px);
+  text-align: center;
+  color: white;
 }
+
 .container-two {
-  max-height: 60vh;
+  flex: 1; /* right container smaller */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(3px);
+  text-align: center;
+  color: white;
 }
 
 /* HEADERS */
@@ -58,20 +55,27 @@ p {
   font-family: "Andale Mono", monospace;
   text-align: center;
   line-height: 1.7;
-  margin: 30px 1;
+  margin: 30px auto;
   font-size: 17px;
 }
 
-/* MAIN IMAGE */
+/* IMAGES */
 img {
   width: 200px;
-  height: 300px;
+  height: auto; /* changed to auto so images scale naturally */
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
   margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* MULTIPLE IMAGES - SIDE BY SIDE */
 .photo-row {
   display: flex;
   justify-content: center;
@@ -79,19 +83,24 @@ img {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+/* MAP IMAGES STACKED VERTICALLY */
 .photo-row-2 {
   display: flex;
-  flex-direction: column; /* stack maps */
+  flex-direction: column;
   align-items: center;
   gap: 20px;
   margin-top: 20px;
 }
+
 .photo-row-2 img {
   width: 80%;
   max-width: 350px;
   height: auto;
   border-radius: 20px;
 }
+
+/* TRAVEL BUTTONS */
 .travel-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -115,13 +124,4 @@ img {
 .place-btn:hover {
   transform: scale(1.05);
   background: #f4fff4;
-}
-
-img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
