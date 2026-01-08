@@ -127,7 +127,7 @@ img:hover {
 }
 
 /* TEXAS PAGE CONTAINER */
-.texas-page .container-one {
+.container-one {
   max-width: 850px;   /* perfect for long text */
   width: 100%;
   margin: 0 auto;     /* centers it */
