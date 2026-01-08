@@ -132,3 +132,13 @@ img:hover {
   width: 100%;
   margin: 0 auto;     /* centers it */
 }
+.page-center {
+  display: flex;
+  justify-content: center;
+}
+
+.texas-container {
+  max-width: 850px;
+  width: 100%;
+}
+
