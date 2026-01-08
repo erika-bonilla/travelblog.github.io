@@ -125,3 +125,10 @@ img:hover {
   transform: scale(1.05);
   background: #f4fff4;
 }
+
+/* TEXAS PAGE CONTAINER */
+.texas-page .container-one {
+  max-width: 850px;   /* perfect for long text */
+  width: 100%;
+  margin: 0 auto;     /* centers it */
+}
