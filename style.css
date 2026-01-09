@@ -142,3 +142,55 @@ img:hover {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+
+  /* reduce page padding */
+  body {
+    padding: 15px;
+  }
+
+  /* stack containers vertically */
+  .container-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  /* containers */
+  .container-one,
+  .container-two {
+    padding: 20px;
+  }
+
+  /* headings */
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  /* paragraphs */
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 20px auto;
+  }
+
+  /* images */
+  img {
+    width: 140px;
+    margin: 8px;
+  }
+
+  /* buttons */
+  .place-btn,
+  .back-btn {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
